@@ -1057,7 +1057,23 @@ button:focus {
 .icon {
   display: block;
   width: 40px;
-  height: 40px; }
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px; }
+
+.link-more-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FF3E79;
+  border-radius: 20px; }
+
+.link-more-icon:focus,
+.link-more-icon:hover {
+  border-color: #B8FFEC; }
 
 .hide {
   height: 90px;
@@ -1168,10 +1184,12 @@ button:focus {
 
 .burger-menu__close {
   display: block;
-  margin-right: 16px; }
+  margin-right: 16px;
+  background-image: url(./static/menu-close.svg); }
 
 .burger-menu__search {
-  margin-left: auto; }
+  margin-left: auto;
+  background-image: url(./static/search.svg); }
 
 .burger-menu__item {
   position: relative; }
@@ -1327,6 +1345,9 @@ button:focus {
   display: none;
   position: relative; }
 
+.feedback__close {
+  background-image: url(./static/menu-close.svg); }
+
 .feedback__title {
   margin: 0;
   margin-bottom: 24px; }
@@ -1347,6 +1368,9 @@ button:focus {
 .call {
   display: none;
   position: relative; }
+
+.call__close {
+  background-image: url(./static/menu-close.svg); }
 
 .call__title {
   margin: 0;
@@ -1384,16 +1408,34 @@ button:focus {
 .header__menu {
   display: none; }
 
+.header__menu-open {
+  background-image: url(./static/menu-open.svg); }
+
 .header__logo::before {
   display: none; }
 
 .header__contacts {
   display: none; }
 
+.header-contacts__call {
+  background-image: url(./static/call.svg); }
+
+.header-contacts__chat {
+  background-image: url(./static/chat.svg); }
+
+.header-contacts__profile {
+  background-image: url(./static/profile.svg); }
+
 .header-connect {
   display: flex;
   align-items: center;
   gap: 16px; }
+
+.header-connect__request {
+  background-image: url(./static/repair.svg); }
+
+.header-connect__status {
+  background-image: url(./static/checkstatus.svg); }
 
 @media (min-width: 768px) {
   .header {
@@ -1495,10 +1537,11 @@ button:focus {
   .hero-connect {
     display: flex; }
   .hero-connect__btn {
+    padding-right: 48px;
     width: auto;
     display: flex;
     align-items: center;
-    gap: 8px; }
+    background-position: center right; }
   .hero-connect__text {
     font-weight: 500;
     font-size: 16px;
