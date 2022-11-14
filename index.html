@@ -61,11 +61,11 @@
       </div>
     </div>
     
-    <div class="feedback sidebar__element">
+    <div class="feedback sidebar__element" tabindex="0">
       <button type="button" class="btn-reset icon sidebar__close feedback__close" aria-label="Закрыть окно"></button>
       <h2 class="feedback__title page-title">Обратная связь</h2>
       <form class="sidebar-form" action="#" method="post">
-        <input class="sidebar-form__elements" type="text" placeholder="Имя">
+        <input class="sidebar-form__elements feedback__first-el" type="text" placeholder="Имя" autofocus tabindex="-1">
         <input class="sidebar-form__elements" type="tel" placeholder="Телефон">
         <input class="sidebar-form__elements" type="email" placeholder="Электронная почта">
         <textarea class="sidebar-form__elements" placeholder="Сообщение" name="massage" rows="4"></textarea>
@@ -87,7 +87,7 @@
       <button type="button" class="btn-reset icon sidebar__close call__close" aria-label="Закрыть окно"></button>
       <h2 class="page-title call__title">Заказать звонок</h2>
       <form class="sidebar-form" action="#" method="post">
-        <input class="sidebar-form__elements" type="tel" placeholder="Телефон">
+        <input class="sidebar-form__elements call__first-el" type="tel" placeholder="Телефон" autofocus>
         <p class="sidebar-form__text">
           Нажимая &laquo;отправить&raquo;, вы&nbsp;даете согласие на&nbsp;
           <a class="sidebar-form__link" aria-label="дополнительная информация" href="#">
